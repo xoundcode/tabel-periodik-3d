@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden; /* Biar ngga bisa di-scroll manual */
+}
+
+#menu {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 20px;
+    text-align: center;
+}
+
+button {
+    color: rgba(127,255,255,0.75);
+    background: transparent;
+    outline: 1px solid rgba(127,255,255,0.75);
+    border: 0px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover, button.active {
+    background-color: rgba(127,255,255,0.5);
+    color: #fff;
+}
+
+/* Styling Box Tiap Elemen Unsur */
+.element {
+    width: 120px;
+    height: 160px;
+    box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+    border: 1px solid rgba(127,255,255,0.25);
+    text-align: center;
+    cursor: default;
+    transition: box-shadow 0.5s ease;
+}
+
+.element:hover {
+    box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+    border: 1px solid rgba(127,255,255,0.75);
+}
+
+.element .number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: rgba(127,255,255,0.75);
+}
+
+.element .symbol {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.75);
+    text-shadow: 0 0 10px rgba(0,255,255,0.95);
+}
+
+.element .details {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    font-size: 12px;
+    color: rgba(127,255,255,0.75);
+}
